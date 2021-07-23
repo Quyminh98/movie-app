@@ -86,11 +86,24 @@
   }
 
 }
-@media (max-width: 960px) {
+/* @media (max-width: 1000px) {
   .poster {
     height: 250px;
   }
-
+} */
+  @media (max-width: 960px) {
+  .poster {
+    height: 300px;
+  }
 }
+
+ @media (max-width: 600px) {
+  .poster {
+    height: 150px;
+  }
+}
+
+
+
 
 
