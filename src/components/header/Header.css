@@ -1,0 +1,40 @@
+.navbar {
+    background: #0b213f;
+    width: 100%;
+}
+
+.input-group .form-control {
+    padding-right: 0;
+    border-radius: 1.25rem;
+}
+
+.input-group .form-control:focus{
+    box-shadow: none;
+}
+
+.input-group-append .btn-link:focus {
+    box-shadow: none;
+
+}
+
+.navbar .header-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 18rem;
+}
+
+.header-brand:hover {
+    color: #ffffff;
+}
+
+.form-search {
+    display: flex;
+}
+
+@media (max-width: 1280px) {
+    .navbar .header-brand {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+}

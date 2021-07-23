@@ -1,0 +1,157 @@
+ul {
+  list-style: none;
+}
+
+.slider {
+  height: 450px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-overlay {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  transition: 0.5s;
+}
+
+.slider-img {
+  height: 100%;
+   width: 100%;
+  transition: 0.5s;
+}
+
+.slider-icon {
+  display: none;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.slider:hover .slider-overlay {
+  opacity: 1;
+}
+
+.slider:hover .slider-icon{
+  display: block;
+  transform: translate(-35px,-54px);
+}
+
+.slider:hover .slider-img {
+  transform: scale(1.1);
+}
+
+.list-inline-item .btn-outline-light {
+  color: #5a606b;
+  border: 1px solid #5a606b;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.list-inline-item .btn-outline-light:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-inline-item .btn-outline-light:focus {
+  box-shadow: none;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.poster-item {
+  transition: 0.2s;
+}
+
+.movie-title {
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
+}
+
+.movie-rating {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.link-detail {
+  text-decoration: none;
+}
+
+.movie-item:hover .poster-item {
+  transform: scale(1.1);
+}
+
+.movie-item:hover .movie-title{
+  color: #ffe77b
+}
+
+.icon-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fa-arrow-alt-circle-right{
+  color: #ffe77b;
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.fa-arrow-alt-circle-right:hover {
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-contact {
+  color: #756666;
+  margin-bottom: 4px;
+}
+
+.link-contact:hover {
+  color: #ffffff;
+}
+
+.infomation {
+  display: flex;
+}
+
+.infomation-item {
+  color: #756666;
+  margin-bottom: 4px;
+
+}
+
+@media (max-width: 1280px) {
+  .slider {
+    
+    height: 300px;
+  }
+
+}
+
+/* @media (max-width: 600px) {
+  .carousel {
+    display: none;
+  }
+} */
+
+
