@@ -42,9 +42,9 @@ function Home() {
                     <img className="slider-img" src={item.backPoster} alt={item.title} />
                 </div>
                 <div className="carousel-center slider-icon">
-                    <a href={`/movie/${item.id}/`}>
+                    <Link to={`/movie/${item.id}/`}>
                         <i className="far fa-play-circle" style={{ fontSize: 70, color: '#fcf9c2' }}></i>
-                    </a>
+                    </Link>
                 </div>
                 <div className="slider-overlay">
                     <div className="carousel-caption" style={{fontSize: 30}}>
